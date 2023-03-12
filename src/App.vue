@@ -46,10 +46,10 @@
     </div>
 
     <div class="container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100" id="back3">
-      <div>
+      <div class="col-lg-6 col-xs-12 d-flex align-items-center justify-content-center mt-5 mb-0 mb-lg-5">
         <h1 id="workHeader">Some of My Work</h1>
       </div>
-      <div class="container d-flex align-items-center justify-content-center row">
+      <div class="container d-flex align-items-center justify-content-center row ">
           <div id="pBoxOne" class="container-fluid col-lg-6 col-xs-12">
             <a href="https://github.com/mirzaak/socialApp" target="_blank"><img src="./assets/socialMedia.png" alt="" ></a>
             <a href="https://github.com/mirzaak/socialApp" target="_blank">Social App</a>
@@ -166,7 +166,6 @@ section{
   font-weight: bold;
   position: relative;
   cursor:context-menu;
-  margin-bottom: 100px;
 }
 #workHeader::after{
     content: 'Some of My Work';
@@ -342,7 +341,7 @@ h1 {
     font-size: 1rem;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 431px) {
     h1 {
         font-size: 3rem !important;
     }
@@ -360,7 +359,7 @@ h1 {
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1580px) {
     h1 {
         font-size: 6rem !important;
     }
