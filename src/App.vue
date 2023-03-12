@@ -1,9 +1,9 @@
 <template>
 <nav class="navbar fixed-top border border-white container-sm mt-0 mt-md-5">
   <div class="container-sm">
-    <a class="navbar-brand text-white" @click="scroll()" href="#back1">Home</a>
-    <a class="navbar-brand text-white" @click="scroll2()" href="#back2">About</a>
-    <a class="navbar-brand text-white" @click="scroll3()" href="#back3">Work</a>
+    <a class="navbar-brand text-white" @click="scroll()" role="button">Home</a>
+    <a class="navbar-brand text-white" @click="scroll2()" role="button">About</a>
+    <a class="navbar-brand text-white" @click="scroll3()" role="button">Work</a>
   </div>
 </nav>
 <div data-aos="zoom-in" id="rightLine" class="d-none d-lg-flex"><div id="line"></div><a href="mailto:mirzakaric002@gmail.com">mirzakaric002@gmail.com</a></div>
