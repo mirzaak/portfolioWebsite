@@ -1,48 +1,38 @@
 <template>
-    <nav data-aos="fade-down" class="navbar navbar-expand-lg" id="nav">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" @click="scroll()">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" @click="scroll2()">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" @click="scroll3()">Work</a>
-      </li>
-    </ul>
+<nav class="navbar fixed-top border border-white container-sm mt-0 mt-md-5">
+  <div class="container-sm">
+    <a class="navbar-brand text-white" @click="scroll()" href="#back1">Home</a>
+    <a class="navbar-brand text-white" @click="scroll2()" href="#back2">About</a>
+    <a class="navbar-brand text-white" @click="scroll3()" href="#back3">Work</a>
   </div>
 </nav>
-<div data-aos="zoom-in" id="rightLine"><div id="line"></div><a href="mailto:mirzakaric002@gmail.com">mirzakaric002@gmail.com</a></div>
-  <div data-aos="zoom-up" id="leftLine"><a href="https://www.linkedin.com/in/mirza-karic-1151811a1/" target="_blank"><img src="./assets/linkedinLogo.png" alt=""></a><div id="line"></div></div>
+<div data-aos="zoom-in" id="rightLine" class="d-none d-lg-flex"><div id="line"></div><a href="mailto:mirzakaric002@gmail.com">mirzakaric002@gmail.com</a></div>
+  <div data-aos="zoom-up" id="leftLine" class="d-none d-lg-flex"><a href="https://www.linkedin.com/in/mirza-karic-1151811a1/" target="_blank"><img src="./assets/linkedinLogo.png" alt=""></a><div id="line"></div></div>
     <section>
-    <div class="container-fluid d-flex align-items-center justify-content-center" id="back1" style="height:100vh;background-color:#0a192f;">
-      <div class="container d-flex align-items-center justify-content-around" style="width:1200px">
-        <div>
-        <h1 data-aos="zoom-in" style="color:white;font-size: 90px;margin: 0;">Mirza Karic</h1>
-        <h1 data-aos="zoom-in" style="color:white;font-size: 45px;font-weight:100;"><VueWriter :eraseSpeed="50" :typeSpeed="100" :delay="1000" :array="['Full Stack Developer']"/></h1>
 
-      </div>
-      <div>
-        <figure data-aos="zoom-in" id="fig">
-          <span id="sp"><img id="profile" src="./assets/profilsquare.jpg" alt=""></span>
+
+    <div class="container-fluid d-flex align-items-center justify-content-around min-vh-100 " id="back1">
+      <div class="container-lg d-flex align-items-center justify-content-around row">
+        <div class="col-lg-6 col-xs-12 d-flex flex-column align-items-center justify-content-center">
+            <h1 class="text-white font-weight-bold" data-aos="zoom-in">Mirza Karic</h1>
+            <h4 class="text-nowrap text-white display-4" data-aos="zoom-in"><VueWriter :eraseSpeed="50" :typeSpeed="100" :delay="1000" :array="['Full Stack Developer']"/></h4>
+        </div>
+      <div class="col-lg-6 col-xs-12 d-flex align-items-center justify-content-center">
+        <figure data-aos="zoom-in" id="fig" class="m-5">
+          <span id="sp"><img class="img-fluid" id="profile" src="./assets/profilsquare.jpg" alt=""></span>
         </figure>
       </div>
       </div>
     </div>
 
-    <div class="container-fluid d-flex align-items-center justify-content-center back1" id="back2" style="height:100vh;background-color:#0a192f;">
-      <div class="container d-flex align-items-center justify-content-around">
-        <div id="portfolio">
-        <a >About Me</a>
+    <div class="container-fluid d-flex align-items-center justify-content-center min-vh-100" id="back2">
+      <div class="container d-flex align-items-center justify-content-around row">
+        <div class="col-lg-6 col-xs-12 d-flex align-items-center justify-content-center mb-5 mb-md-0">
+        <h1 id="portfolio">About Me</h1>
       </div>
-      <div id="about">
+      <div id="about" class="col-lg-6 col-xs-12 mt-0 mt-md-5">
         <div id="downLeft"></div>
-        <p>Hello! My name is Mirza and I enjoy creating things that live on the internet. 
+        <p class="display-6">Hello! My name is Mirza and I enjoy creating things that live on the internet. 
           My interest in web development started back in 2020 and grew since then!
           As a student of Information Technology I am able to work on various projects, in free time I love to learn new technologies!<br>
           With expertise in Front End Development I enjoy other technologies like:<br><br>
@@ -55,16 +45,16 @@
       </div>
     </div>
 
-    <div class="container-fluid d-flex flex-column align-items-center justify-content-center" id="back3" style="height:100vh;background-color:#0a192f;">
-      <div id="workHeader">
-        <a>Some of My Work</a>
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100" id="back3">
+      <div>
+        <h1 id="workHeader">Some of My Work</h1>
       </div>
-      <div class="container d-flex align-items-center justify-content-center">
-          <div id="pBoxOne">
+      <div class="container d-flex align-items-center justify-content-center row">
+          <div id="pBoxOne" class="container-fluid col-lg-6 col-xs-12">
             <a href="https://github.com/mirzaak/socialApp" target="_blank"><img src="./assets/socialMedia.png" alt="" ></a>
             <a href="https://github.com/mirzaak/socialApp" target="_blank">Social App</a>
           </div>
-          <div id="pBoxTwo">
+          <div id="pBoxTwo" class="container-fluid col-lg-6 col-xs-12">
             <a href="https://github.com/mirzaak/TMDB-MovieApp" target="_blank"><img src="./assets/tmdbhome.png" alt=""></a>
             <a href="https://github.com/mirzaak/TMDB-MovieApp" target="_blank">TMDB Clone App</a>
           </div>
@@ -93,6 +83,9 @@ function scroll3(){
 
 </script>
 <style>
+section{
+  background-color: rgb(10, 25, 47);
+}
 #nav input{
     margin-left: 20px;
     margin-right: 20px;
@@ -145,16 +138,13 @@ section{
 #back3{
   scroll-snap-align: end;
 }
-img{
-  width: 300px;
-}
 #portfolio{
   color: transparent;
   -webkit-text-stroke: 1px white;
-  font-size: 80px;
   font-weight: bold;
   position: relative;
   cursor:context-menu;
+  padding: 0;
 }
 #portfolio::after{
     content: 'About Me';
@@ -173,7 +163,6 @@ img{
 #workHeader{
   color: transparent;
   -webkit-text-stroke: 1px white;
-  font-size: 80px;
   font-weight: bold;
   position: relative;
   cursor:context-menu;
@@ -200,6 +189,7 @@ img{
   }
 #fig{
   border: 1px solid white;
+  max-width: 300px;
 }
 #sp{
   margin-left: -30px;
@@ -289,8 +279,7 @@ img{
   border-right: 1px solid white;
 }
 #pBoxOne{
-  margin-right: 50px;
-  margin-top: -150px; 
+
   width: 400px;
   height: 300px;
   display: flex;
@@ -338,7 +327,6 @@ opacity: 0.3;
   height: 300px;
   display: flex;
   align-items: center;
-  margin-left: 50px;
   justify-content: center;
   position: relative;
 }
@@ -350,5 +338,54 @@ opacity: 0.3;
   transition: 0.5s;
   cursor: pointer;
 }
+h1 {
+    font-size: 1rem;
+}
 
+@media (min-width: 400px) {
+    h1 {
+        font-size: 3rem !important;
+    }
+}
+
+@media (min-width: 991x) {
+    h1 {
+        font-size: 2rem !important;
+    }
+}
+
+@media (min-width: 1250px) {
+    h1 {
+        font-size: 3rem !important;
+    }
+}
+
+@media (min-width: 1500px) {
+    h1 {
+        font-size: 6rem !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-sm {
+        width: 300px !important;
+    }
+
+} 
+@media (min-width: 992px) {
+    .container-sm {
+        width: 500px !important;
+    }
+
+} 
+@media (min-width: 1400) {
+    .container-sm {
+        width: 1200px !important;
+    }
+
+}
+
+.container-sm {
+    max-width: 100% !important;
+}
 </style>
